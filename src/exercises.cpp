@@ -247,7 +247,7 @@ double exA10_line(double _m, double _x, double _c)
 {
     // TODO: calculate and return the y axis value given the y-slope 
     // intercept form of a line equation
-    double y = (_m * _x) + _c;
+    double y = 0;
     return y;
 }
 
