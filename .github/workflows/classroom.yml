@@ -1,0 +1,260 @@
+name: Autograding Tests
+'on':
+- workflow_dispatch
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: structure
+      id: structure
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: structure
+        setup-command: ''
+        command: bash ./scripts/check_structure.sh
+        timeout: 1
+        max-score: 1
+    - name: build
+      id: build
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: build
+        setup-command: ''
+        command: bash ./scripts/build.sh
+        timeout: 1
+        max-score: 1
+    - name: A1
+      id: a1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A1
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A1
+        timeout: 1
+        max-score: 1
+    - name: A2
+      id: a2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A2
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A2
+        timeout: 1
+        max-score: 1
+    - name: A3
+      id: a3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A3
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A3
+        timeout: 1
+        max-score: 1
+    - name: A4
+      id: a4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A4
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A4
+        timeout: 1
+        max-score: 1
+    - name: A5
+      id: a5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A5
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A5
+        timeout: 1
+        max-score: 1
+    - name: A6
+      id: a6
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A6
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A6
+        timeout: 1
+        max-score: 1
+    - name: A7
+      id: a7
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A7
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A7
+        timeout: 1
+        max-score: 1
+    - name: A8
+      id: a8
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A8
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A8
+        timeout: 1
+        max-score: 1
+    - name: A9
+      id: a9
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A9
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A9
+        timeout: 1
+        max-score: 1
+    - name: A10
+      id: a10
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: A10
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh A10
+        timeout: 1
+        max-score: 1
+     - name: B1
+      id: b1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B1
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B1
+        timeout: 1
+        max-score: 1
+    - name: B2
+      id: b2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B2
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B2
+        timeout: 1
+        max-score: 1
+    - name: B3
+      id: b3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B3
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B3
+        timeout: 1
+        max-score: 1
+    - name: B4
+      id: b4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B4
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B4
+        timeout: 1
+        max-score: 1
+    - name: B5
+      id: b5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B5
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B5
+        timeout: 1
+        max-score: 1
+    - name: B6
+      id: b6
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B6
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B6
+        timeout: 1
+        max-score: 1
+    - name: B7
+      id: b7
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B7
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B7
+        timeout: 1
+        max-score: 1
+    - name: B8
+      id: b8
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B8
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B8
+        timeout: 1
+        max-score: 1
+    - name: B9
+      id: b9
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B9
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B9
+        timeout: 1
+        max-score: 1
+    - name: B10_range
+      id: b10_range
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B10_range
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B10_range
+        timeout: 1
+        max-score: 1
+    - name: B10_prime
+      id: b10_prime
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B10_prime
+        setup-command: ''
+        command: bash ./scripts/test_suite.sh B10_prime
+        timeout: 1
+        max-score: 1
+    - name: B10_perf
+      id: b10_perf
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: B10_perf
+        setup-command: ''
+        command: timeout 4s bash ./scripts/test_suite.sh B10_perf
+        timeout: 1
+        max-score: 1
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        STRUCTURE_RESULTS: "${{steps.structure.outputs.result}}"
+        BUILD_RESULTS: "${{steps.build.outputs.result}}"
+        A1_RESULTS: "${{steps.a1.outputs.result}}"
+        A2_RESULTS: "${{steps.a2.outputs.result}}"
+        A3_RESULTS: "${{steps.a3.outputs.result}}"
+        A4_RESULTS: "${{steps.a4.outputs.result}}"
+        A5_RESULTS: "${{steps.a5.outputs.result}}"
+        A6_RESULTS: "${{steps.a6.outputs.result}}"
+        A7_RESULTS: "${{steps.a7.outputs.result}}"
+        A8_RESULTS: "${{steps.a8.outputs.result}}"
+        A9_RESULTS: "${{steps.a9.outputs.result}}"
+        A10_RESULTS: "${{steps.a10.outputs.result}}"
+        B1_RESULTS: "${{steps.b1.outputs.result}}"
+        B2_RESULTS: "${{steps.b2.outputs.result}}"
+        B3_RESULTS: "${{steps.b3.outputs.result}}"
+        B4_RESULTS: "${{steps.b4.outputs.result}}"
+        B5_RESULTS: "${{steps.b5.outputs.result}}"
+        B6_RESULTS: "${{steps.b6.outputs.result}}"
+        B7_RESULTS: "${{steps.b7.outputs.result}}"
+        B8_RESULTS: "${{steps.b8.outputs.result}}"
+        B9_RESULTS: "${{steps.b9.outputs.result}}"
+        B10_RANGE_RESULTS: "${{steps.b10_range.outputs.result}}"
+        B10_PRIME_RESULTS: "${{steps.b10_prime.outputs.result}}"
+        B10_PERF_RESULTS: "${{steps.b10_perf.outputs.result}}"
+      with:
+        runners: structure,build,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10_range,b10_prime,b10_perf
