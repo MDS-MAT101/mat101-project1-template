@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mat101_tests.dir/tests/test_exercises.cpp.o -o mat101_tests  libmat101.a 

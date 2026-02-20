@@ -1,0 +1,73 @@
+Start testing: Feb 19 04:27 UTC
+----------------------------------------------------------
+1/1 Testing: mat101_tests
+1/1 Test: mat101_tests
+Command: "/mnt/data/mat101_proj/build/mat101_tests"
+Directory: /mnt/data/mat101_proj/build
+"mat101_tests" start time: Feb 19 04:27 UTC
+Output:
+----------------------------------------------------------
+/mnt/data/mat101_proj/tests/test_exercises.cpp:273 FAILED: n == 64
+/mnt/data/mat101_proj/tests/test_exercises.cpp:247 FAILED: n == 3
+/mnt/data/mat101_proj/tests/test_exercises.cpp:248 FAILED: out[0] == 2
+/mnt/data/mat101_proj/tests/test_exercises.cpp:249 FAILED: out[1] == 3
+/mnt/data/mat101_proj/tests/test_exercises.cpp:250 FAILED: out[2] == 5
+/mnt/data/mat101_proj/tests/test_exercises.cpp:226 FAILED: n == 8
+/mnt/data/mat101_proj/tests/test_exercises.cpp:227 FAILED: out[0] == 2
+/mnt/data/mat101_proj/tests/test_exercises.cpp:228 FAILED: out[1] == 3
+/mnt/data/mat101_proj/tests/test_exercises.cpp:229 FAILED: out[2] == 5
+/mnt/data/mat101_proj/tests/test_exercises.cpp:230 FAILED: out[7] == 19
+/mnt/data/mat101_proj/tests/test_exercises.cpp:204 FAILED: exB10_is_prime(2)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:205 FAILED: exB10_is_prime(3)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:207 FAILED: exB10_is_prime(29)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:193 FAILED: sum == 110
+/mnt/data/mat101_proj/tests/test_exercises.cpp:194 FAILED: b == a + 1
+/mnt/data/mat101_proj/tests/test_exercises.cpp:195 FAILED: c == b + 1
+/mnt/data/mat101_proj/tests/test_exercises.cpp:196 FAILED: d == c + 1
+/mnt/data/mat101_proj/tests/test_exercises.cpp:197 FAILED: a + b + c + d == 110
+/mnt/data/mat101_proj/tests/test_exercises.cpp:184 FAILED: exB8_sum_digits_do_while(123) == 6
+/mnt/data/mat101_proj/tests/test_exercises.cpp:186 FAILED: exB8_sum_digits_do_while(-45) == 9
+/mnt/data/mat101_proj/tests/test_exercises.cpp:178 FAILED: o == true
+/mnt/data/mat101_proj/tests/test_exercises.cpp:180 FAILED: x == true
+/mnt/data/mat101_proj/tests/test_exercises.cpp:169 FAILED: exB6_sum_0_to_n(3) == doctest::Approx(6.0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:170 FAILED: exB6_sum_0_to_n(10) == doctest::Approx(55.0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:156 FAILED: e == 2
+/mnt/data/mat101_proj/tests/test_exercises.cpp:157 FAILED: o == 3
+/mnt/data/mat101_proj/tests/test_exercises.cpp:148 FAILED: exB4_divisibility_class(12) == 0
+/mnt/data/mat101_proj/tests/test_exercises.cpp:149 FAILED: exB4_divisibility_class(8) == 1
+/mnt/data/mat101_proj/tests/test_exercises.cpp:140 FAILED: exB3_is_perfect_square(0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:141 FAILED: exB3_is_perfect_square(1)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:142 FAILED: exB3_is_perfect_square(16)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:133 FAILED: exB2_quadratic_nature(1, 0, -1) == 2
+/mnt/data/mat101_proj/tests/test_exercises.cpp:134 FAILED: exB2_quadratic_nature(1, 2, 1) == 1
+/mnt/data/mat101_proj/tests/test_exercises.cpp:135 FAILED: exB2_quadratic_nature(1, 0, 1) == 0
+/mnt/data/mat101_proj/tests/test_exercises.cpp:129 FAILED: exB1_simple_interest(1000, 0.05, 2) == doctest::Approx(100.0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:114 FAILED: p.y == Approx(yA).epsilon(1e-9)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:115 FAILED: p.y == Approx(yB).epsilon(1e-9)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:116 FAILED: yA == Approx(yB).epsilon(1e-9)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:119 FAILED: p.x == Approx(-0.8).epsilon(1e-9)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:120 FAILED: p.y == Approx( 1.4).epsilon(1e-9)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:82 FAILED: exA9_compound_div(10,2) == 3
+/mnt/data/mat101_proj/tests/test_exercises.cpp:78 FAILED: exA8_shift_subtract(3,16) == ((3<<2) - (16>>2))
+/mnt/data/mat101_proj/tests/test_exercises.cpp:71 FAILED: exA7_divisible(10,5)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:65 FAILED: exA6_both_even_bitwise(2,4)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:60 FAILED: exA5_larger_sum_or_diff(1,2,3,4) == 3
+/mnt/data/mat101_proj/tests/test_exercises.cpp:61 FAILED: exA5_larger_sum_or_diff(1,1,10,0) == 10
+/mnt/data/mat101_proj/tests/test_exercises.cpp:56 FAILED: exA4_inc_dec_calc(1,2,9,1) == ((1+1)*2 - 0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:50 FAILED: exA4_inc_dec_calc(1,2,9,4) == (2*2 - 9/3)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:44 FAILED: exA3_nonzero_and_zero(1,2,5,5)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:39 FAILED: exA2_sum_greater_than_diff(1,2,3,4)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:34 FAILED: result == doctest::Approx(-2.0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:35 FAILED: exA1_expression(a,b,c,d) == doctest::Approx(-2.0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:12 FAILED: exA1_expression(1,2,3,4) == doctest::Approx(-3.0)
+/mnt/data/mat101_proj/tests/test_exercises.cpp:13 FAILED: exA1_expression(2,3,10,6) == doctest::Approx(20.0)
+54 test(s) failed.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"mat101_tests" end time: Feb 19 04:27 UTC
+"mat101_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 19 04:27 UTC
