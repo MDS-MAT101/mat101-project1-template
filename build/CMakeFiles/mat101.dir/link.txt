@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmat101.a CMakeFiles/mat101.dir/src/exercises.cpp.o
-/usr/bin/ranlib libmat101.a

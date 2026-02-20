@@ -1,6 +1,0 @@
-/mnt/data/mat101_proj/build/CMakeFiles/mat101.dir
-/mnt/data/mat101_proj/build/CMakeFiles/mat101_app.dir
-/mnt/data/mat101_proj/build/CMakeFiles/mat101_tests.dir
-/mnt/data/mat101_proj/build/CMakeFiles/test.dir
-/mnt/data/mat101_proj/build/CMakeFiles/edit_cache.dir
-/mnt/data/mat101_proj/build/CMakeFiles/rebuild_cache.dir
