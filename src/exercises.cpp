@@ -403,9 +403,8 @@ int exB8_sum_digits_do_while(int _n)
 // - Your instructor will check in the interview that you found them programmatically.
 int exB9_four_consecutive_sum_110(int& _a, int& _b, int& _c, int& _d)
 {
-    // TODO
-    _a + _b + _c + _d = 0;
-    return 0;
+    // TODO programmatically determine values for a, b, c, and d such that the below expression returns an int value of 110
+    return _a + _b + _c + _d;
 }
 
 //--------- EXERCISE B10 --------
