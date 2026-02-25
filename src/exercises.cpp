@@ -29,7 +29,7 @@ namespace mat101 {
 //
 // Tip:
 // - use brackets exactly like the algebra.
-double exA1_expression(double a, double b, double c, double d)
+double exA1_expression(double _a, double _b, double _c, double _d)
 {
     // TODO: compute and return the expression result
     return 0.0;
@@ -53,17 +53,17 @@ double exA1_expression(double a, double b, double c, double d)
 //   where X = (a+b) and Y = (c-d)
 // - Choose small integers for X and Y, like (1 and -2) or (2 and -1).
 // - Then pick a,b that add to X and pick c,d that subtract to Y.
-float exA1_find_values_for_minus_two(double& out_a, double& out_b, double& out_c, double& out_d)
+float exA1_find_values_for_minus_two(double& _out_a, double& _out_b, double& _out_c, double& _out_d)
 {
     // TODO:
     // set values for each of the variables out_a, out_b, out_c, and out_d below
     // such that they result in the expression resolving to be -2
-    out_a = 0.0;
-    out_b = 0.0;
-    out_c = 0.0;
-    out_d = 0.0;
+    _out_a = 0.0;
+    _out_b = 0.0;
+    _out_c = 0.0;
+    _out_d = 0.0;
 
-    return (float)exA1_expression(out_a, out_b, out_c, out_d);
+    return (float)exA1_expression(_out_a, _out_b, _out_c, _out_d);
 }
 
 //--------- EXERCISE A2 --------
@@ -77,7 +77,7 @@ float exA1_find_values_for_minus_two(double& out_a, double& out_b, double& out_c
 //
 // Tip:
 // - compute the left side and right side into variables first (readability).
-bool exA2_sum_greater_than_diff(double a, double b, double c, double d)
+bool exA2_sum_greater_than_diff(double _a, double _b, double _c, double _d)
 {
     // TODO: return whether (a + b) is greater than (c - d)
     return false;
@@ -95,7 +95,7 @@ bool exA2_sum_greater_than_diff(double a, double b, double c, double d)
 //
 // Tip:
 // - "non-zero" means: expression != 0
-bool exA3_nonzero_and_zero(double a, double b, double c, double d)
+bool exA3_nonzero_and_zero(double _a, double _b, double _c, double _d)
 {
     // TODO: return whether (a + b) is non-zero  AND  (c - d) is zero
     return false;
@@ -115,7 +115,7 @@ bool exA3_nonzero_and_zero(double a, double b, double c, double d)
 // Important:
 // - after decrementing, d could become 0 (divide-by-zero is a crash).
 // - if d becomes 0, treat (c / d) as 0.
-int exA4_inc_dec_calc(int a, int b, int c, int d)
+int exA4_inc_dec_calc(int _a, int _b, int _c, int _d)
 {
     // TODO implement as per task instructions above
     return 0;
@@ -129,7 +129,7 @@ int exA4_inc_dec_calc(int a, int b, int c, int d)
 //
 // Task:
 // - return the larger of (a + b) and (c - d) using ONE ternary expression.
-int exA5_larger_sum_or_diff(int a, int b, int c, int d)
+int exA5_larger_sum_or_diff(int _a, int _b, int _c, int _d)
 {
     // TODO
     return 0;
@@ -144,7 +144,7 @@ int exA5_larger_sum_or_diff(int a, int b, int c, int d)
 // Tip:
 // - An integer is even when its least significant bit is 0:
 //       ie. (n & 1) is zero (hint: check it for equality with 0)
-bool exA6_both_even_bitwise(int a, int b)
+bool exA6_both_even_bitwise(int _a, int _b)
 {
     // TODO
     return false;
@@ -159,7 +159,7 @@ bool exA6_both_even_bitwise(int a, int b)
 // Task:
 // - return true if a is divisible by b
 // - if b == 0, return false (divide-by-zero is a crash).
-bool exA7_divisible(int a, int b)
+bool exA7_divisible(int _a, int _b)
 {
     // TODO
     return false;
@@ -181,7 +181,7 @@ bool exA7_divisible(int a, int b)
 // Note:
 // - shifting left by 2 is like multiplying by 4 (for ints)
 // - shifting right by 2 is like dividing by 4 (for ints, truncates)
-int exA8_shift_subtract(int a, int b)
+int exA8_shift_subtract(int _a, int _b)
 {
     // TODO
     return 0;
@@ -198,7 +198,7 @@ int exA8_shift_subtract(int a, int b)
 // - multiply b by 2 and set b as the result using compound assignment
 // - return a / b using integer division
 // - if b becomes 0, return 0 (divide-by-zero is a crash).
-int exA9_compound_div(int a, int b)
+int exA9_compound_div(int _a, int _b)
 {
     // TODO
     return 0;
@@ -267,7 +267,7 @@ Point exA10_intersection(double _LineA_m, double _LineA_x, double _LineA_c, doub
 //---- Simple Interest ----
 //
 // Simple Interest = Principal Amount × Interest Rate × Time
-double exB1_simple_interest(double P, double R, double T)
+double exB1_simple_interest(double _P, double _R, double _T)
 {
     // TODO calculate the simple interest and return the result
     return 0.0;
@@ -282,7 +282,7 @@ double exB1_simple_interest(double P, double R, double T)
 // return 2 if there are exactly 2 roots
 //
 // Remember, if a == 0, it is NOT a quadratic. (ie. return -1)
-int exB2_quadratic_nature(double a, double b, double c)
+int exB2_quadratic_nature(double _a, double _b, double _c)
 {
     // TODO
     return -1;
@@ -296,7 +296,7 @@ int exB2_quadratic_nature(double a, double b, double c)
 //
 // Tip:
 // - Use sqrt(n), truncate to int, and square back to compare.
-bool exB3_is_perfect_square(int n)
+bool exB3_is_perfect_square(int _n)
 {
     // TODO
     return false;
@@ -309,7 +309,7 @@ bool exB3_is_perfect_square(int n)
 // 0 : divisible by 2 and 3
 // 1 : divisible by 2 but not 3
 // 2 : neither divisible by 2 nor by 3
-int exB4_divisibility_class(int n)
+int exB4_divisibility_class(int _n)
 {
     // TODO
     return 2;
@@ -321,11 +321,11 @@ int exB4_divisibility_class(int n)
 // Task:
 // - count evens and odds in [lower, upper]
 // - if lower > upper, treat as empty range
-void exB5_count_even_odd(int lower, int upper, int& evenCount, int& oddCount)
+void exB5_count_even_odd(int _lower, int _upper, int& _evenCount, int& _oddCount)
 {
     // TODO
-    evenCount = 0;
-    oddCount = 0;
+    _evenCount = 0;
+    _oddCount = 0;
 }
 
 //--------- EXERCISE B6 --------
@@ -335,7 +335,7 @@ void exB5_count_even_odd(int lower, int upper, int& evenCount, int& oddCount)
 // - Loop from 0 to n (inclusive), summing the numbers as you go.
 // - Return the final sum.
 // - If n < 0, return 0.
-double exB6_sum_0_to_n(int n)
+double exB6_sum_0_to_n(int _n)
 {
     // TODO
     return 0.0;
@@ -350,17 +350,17 @@ double exB6_sum_0_to_n(int n)
 // in C++
 //
 // Logical operators to be used: AND (&&), OR (||), NOT (!)
-void exB7_logical_expr(bool p, bool q,
-                       bool& out_and,
-                       bool& out_or,
-                       bool& out_not_p,
-                       bool& out_xor)
+void exB7_logical_expr(bool _p, bool _q,
+                       bool& _out_and,
+                       bool& _out_or,
+                       bool& _out_not_p,
+                       bool& _out_xor)
 {
     // TODO modify the below statements so that they resolve the corresponding formal logic statements
-    out_and = false;    // p AND q
-    out_or = false;     // p OR q
-    out_not_p = false;  // NOT p
-    out_xor = false;    // XOR: true iff p and q have different truth values
+    _out_and = false;    // p AND q
+    _out_or = false;     // p OR q
+    _out_not_p = false;  // NOT p
+    _out_xor = false;    // XOR: true iff p and q have different truth values
 }
 
 //--------- EXERCISE B8 --------
@@ -375,7 +375,7 @@ void exB7_logical_expr(bool p, bool q,
 //  123 -> 6
 //  0   -> 0
 //  -45 -> 9
-int exB8_sum_digits_do_while(int n)
+int exB8_sum_digits_do_while(int _n)
 {
     // TODO
     return 0;
@@ -398,11 +398,13 @@ int exB8_sum_digits_do_while(int n)
 // - Return the sum (should be 110).
 //
 // Note:
+// - DO NOT hardcode the values for a, b c, and d
+// - You MUST find them programmatically
 // - Your instructor will check in the interview that you found them programmatically.
-int exB9_four_consecutive_sum_110(int& a, int& b, int& c, int& d)
+int exB9_four_consecutive_sum_110(int& _a, int& _b, int& _c, int& _d)
 {
     // TODO
-    a = b = c = d = 0;
+    _a + _b + _c + _d = 0;
     return 0;
 }
 
@@ -438,13 +440,13 @@ int exB9_four_consecutive_sum_110(int& a, int& b, int& c, int& d)
 //
 // IMPORTANT:
 // - exB10_primes_in_range MUST call exB10_is_prime (don't duplicate logic).
-bool exB10_is_prime(int n)
+bool exB10_is_prime(int _n)
 {
     // TODO
     return false;
 }
 
-int exB10_primes_in_range(int start, int end, int out[], int maxOut)
+int exB10_primes_in_range(int _start, int _end, int _out[], int _maxOut)
 {
     // TODO:
     // - if start > end, return 0
@@ -456,7 +458,7 @@ int exB10_primes_in_range(int start, int end, int out[], int maxOut)
     // - out[] is a block of memory already created by the caller.
     // - maxOut is how many "slots" you are allowed to write into.
     //   Valid indexes are 0 up to (maxOut - 1).
-    (void)start; (void)end; (void)out; (void)maxOut;
+    
     return 0;
 }
 

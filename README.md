@@ -1,4 +1,4 @@
-# MAT101 Project 1 (GitHub Classroom version) — Applied Arithmetic Problems
+# MAT101 Project 1 (GitHub Classroom version) - Applied Arithmetic Problems
 
 ## What you edit
 - `src/exercises.cpp` (implement the TODO functions)
